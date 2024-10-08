@@ -5,32 +5,18 @@ const logoCount: number = 4;
 const logoIndex: Ref = ref(Math.floor(Math.random() * logoCount));
 let isHover: boolean = false;
 
-const increaseIndex: Function = (): void => {
-  if (isHover) {
-    logoIndex.value = logoIndex.value + 1;
+const setLogo = ()=>{
+  logoIndex.value = Math.floor(Math.random() * logoCount);
+}
+setLogo();
 
-    if (logoIndex.value === logoCount) {
-      logoIndex.value = 0;
-    }
-    setTimeout(increaseIndex, 75);
-  }
-};
+setInterval(setLogo, 3500);
 
-const onMouseEnter = () => {
-  isHover = true;
-  increaseIndex();
-};
-
-const onMouseLeave = () => {
-  isHover = false;
-};
 </script>
 
 <template>
   <div id="logo"
-       class="logo"
-       v-on:mouseenter="onMouseEnter"
-       v-on:mouseleave="onMouseLeave">
+       class="logo">
     <a href="/">
       <svg :class="{'active': logoIndex === 0}"
            class="logo__svg logo__svg--knockout"

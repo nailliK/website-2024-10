@@ -16,7 +16,12 @@ const emojis: Array<string> = [
   "🦕"
 ];
 
-emoji.value = emojis[Math.floor(Math.random() * emojis.length)];
+const setEmoji = ()=>{
+  emoji.value = emojis[Math.floor(Math.random() * emojis.length)];
+}
+
+setInterval(setEmoji, 2500);
+setEmoji();
 
 </script>
 
