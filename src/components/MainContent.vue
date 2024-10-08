@@ -19,6 +19,7 @@ const emojis: Array<string> = [
   "💰",
   "🎃",
   "⛺",
+  "🍔"
 ];
 
 const setEmoji = ()=>{
