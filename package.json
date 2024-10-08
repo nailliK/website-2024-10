@@ -3,10 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "start": "npm run serve",
+  "start": "server.js",
   "scripts": {
-    "run-p": "npm run run-p",
-    "serve": "serve -p 80 -s dist",
+    "serve": "node server.js",
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
@@ -16,8 +15,12 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "vue": "^3.4.29",
-    "serve": "^14.2.3"
+    "filehandler": "^0.0.0",
+    "finalhandler": "^1.3.1",
+    "http": "^0.0.1-security",
+    "serve": "^14.2.3",
+    "serve-static": "^1.16.2",
+    "vue": "^3.4.29"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
