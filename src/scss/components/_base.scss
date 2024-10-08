@@ -10,6 +10,8 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 html {
@@ -17,7 +19,13 @@ html {
 }
 
 body {
+  margin: auto;
+  max-width: 32 * $line-height;
   opacity: 0;
+  padding: var(--line-height);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   &.loaded {
     opacity: 1;

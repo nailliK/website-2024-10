@@ -8,9 +8,9 @@ $container-padding: false !default;
 
 // responsive breakpoints
 $grid-breakpoints: (
-  small: 30rem,
-  medium: 48rem,
-  large: 64rem
+        small: 30rem,
+        medium: 48rem,
+        large: 64rem
 ) !default;
 
 $total-cols: nth(nth($grid-breakpoints, length($grid-breakpoints)), 2);
@@ -64,11 +64,11 @@ $total-cols: nth(nth($grid-breakpoints, length($grid-breakpoints)), 2);
     // assign widths
     @if ($grid-gutter != false) {
       flex-basis: calc(
-        (#{$cols} / #{$reference} * 100%) - #{$grid-gutter} + (#{$cols} / #{$reference} * #{$grid-gutter})
+              (#{$cols} / #{$reference} * 100%) - #{$grid-gutter} + (#{$cols} / #{$reference} * #{$grid-gutter})
       );
 
       max-width: calc(
-        (#{$cols} / #{$reference} * 100%) - #{$grid-gutter} + (#{$cols} / #{$reference} * #{$grid-gutter})
+              (#{$cols} / #{$reference} * 100%) - #{$grid-gutter} + (#{$cols} / #{$reference} * #{$grid-gutter})
       );
     } @else {
 
@@ -103,4 +103,3 @@ $total-cols: nth(nth($grid-breakpoints, length($grid-breakpoints)), 2);
 @mixin cols-grid($cols, $reference) {
   grid-column: $cols / $reference;
 }
-
