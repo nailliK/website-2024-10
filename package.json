@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "start": "npm run serve",
   "scripts": {
     "serve": "serve -p 80 -s dist",
     "dev": "vite",
