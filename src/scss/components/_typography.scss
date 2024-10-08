@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4 * $font-size;
-  line-height: 4 * $line-height;
+  line-height: 4 * $font-size;
   margin-bottom: 2 * $line-height;
 
   > * {

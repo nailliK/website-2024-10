@@ -24,7 +24,7 @@ emoji.value = emojis[Math.floor(Math.random() * emojis.length)];
   <main id="home"
         class="main">
     <div class="main__content">
-      <h1>Killian <span class="hide-for-mobile">Louis</span> Grant</h1>
+      <h1>Killian Louis Grant</h1>
 
       <section>
         <h3>Who I am</h3>
@@ -45,7 +45,7 @@ emoji.value = emojis[Math.floor(Math.random() * emojis.length)];
           <li>UX/UI Design</li>
         </ul>
 
-        <a download href="/Killian%20Louis%20Grant%20-%20Qualifications%20Summary%20-%20Sep%202024.pdf">Download my
+        <a download href="https://docs.google.com/document/d/1BY0XK_BWa9bADw-Ao3kFedLsXGs2rcny2AYamFkEl-A/export?format=pdf">Download my
           resume here</a>
       </section>
     </div>
