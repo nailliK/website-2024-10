@@ -56,7 +56,7 @@ setEmoji();
           <li>UX/UI Design</li>
         </ul>
 
-        <a download href="https://docs.google.com/document/d/1BY0XK_BWa9bADw-Ao3kFedLsXGs2rcny2AYamFkEl-A/export?format=pdf">Download my
+        <a download href="https://docs.google.com/document/d/1_UUzHGmayCb174oJqJFzFVMgcF4R8V7Nf72v3jX65Xo/export?format=pdf">Download my
           resume here</a>
       </section>
     </div>
